@@ -39,25 +39,21 @@ namespace Project_PRN {
 
         private void labelQuantity_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Hide();
             groupQuantity.Show();
         }
 
         private void btnCategoryManager_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Hide();
             groupCategoryManager.Show();
         }
 
         private void btnColorManager_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Hide();
             groupColorManager.Show();
         }
 
         private void btnSizeManager_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Hide();
             groupSizeManager.Show();
         }
 
@@ -67,7 +63,6 @@ namespace Project_PRN {
 
         private void btnExitColorManager_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Hide();
             groupQuantity.Show();
         }
 
@@ -78,7 +73,10 @@ namespace Project_PRN {
 
         private void btnExitCategoryManager_Click(object sender, EventArgs e) {
             ClearGroup();
-            groupCateQuantity.Show();
+        }
+
+        private void label13_Click(object sender, EventArgs e) {
+
         }
     }
 }
