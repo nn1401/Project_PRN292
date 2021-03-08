@@ -21,8 +21,6 @@ namespace Project_PRN {
             this.BackColor = Color.Transparent;
             this.TransparencyKey = BackColor;
 
-            Console.WriteLine("Okkkkk");
-
             ClearGroup();
         }
 
