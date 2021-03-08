@@ -20,6 +20,9 @@ namespace Project_PRN {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = Color.Transparent;
             this.TransparencyKey = BackColor;
+
+            Console.WriteLine("Okkkkk");
+
             ClearGroup();
         }
 
