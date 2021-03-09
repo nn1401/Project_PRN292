@@ -36,7 +36,7 @@ namespace Project_PRN {
         }
 
         private void btnLogin_Click(object sender, EventArgs e) {
-            MainForm mainForm = new MainForm(this);
+            MainForm mainForm = new MainForm();
             this.Hide();
             mainForm.Show();
         }

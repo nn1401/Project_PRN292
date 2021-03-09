@@ -25,13 +25,13 @@ namespace Project_PRN {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridViewAccount = new System.Windows.Forms.DataGridView();
+            this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
             this.ColumnSt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,26 +41,22 @@ namespace Project_PRN {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtProductPrice = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtProductID = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupSizeManager = new System.Windows.Forms.GroupBox();
-            this.groupColorManager = new System.Windows.Forms.GroupBox();
-            this.groupCategoryManager = new System.Windows.Forms.GroupBox();
-            this.groupQuantity = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExitColorManager = new System.Windows.Forms.Button();
+            this.btnAddColor = new System.Windows.Forms.Button();
+            this.labelColorName = new System.Windows.Forms.Label();
+            this.txtColorName = new System.Windows.Forms.TextBox();
+            this.dataGridViewColor = new System.Windows.Forms.DataGridView();
+            this.CloumnColorManager = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExitCategoryManager = new System.Windows.Forms.Button();
+            this.btnUpdateCategory = new System.Windows.Forms.Button();
+            this.btnAddCategory = new System.Windows.Forms.Button();
+            this.labelCategoryName = new System.Windows.Forms.Label();
+            this.txtCategoryName = new System.Windows.Forms.TextBox();
+            this.dataGridViewCate = new System.Windows.Forms.DataGridView();
+            this.ColumnCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelEachQuantity = new System.Windows.Forms.Label();
+            this.labelColor = new System.Windows.Forms.Label();
+            this.labelSize = new System.Windows.Forms.Label();
             this.dataGridViewQuantity = new System.Windows.Forms.DataGridView();
             this.ColumnSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,42 +66,44 @@ namespace Project_PRN {
             this.btnAddQuantity = new System.Windows.Forms.Button();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.cbColor = new System.Windows.Forms.ComboBox();
-            this.cbCatgory = new System.Windows.Forms.ComboBox();
-            this.btnExitCategoryManager = new System.Windows.Forms.Button();
-            this.btnUpdateCategory = new System.Windows.Forms.Button();
-            this.btnAddCategory = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridViewCate = new System.Windows.Forms.DataGridView();
-            this.ColumnCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExitColorManager = new System.Windows.Forms.Button();
-            this.btnAddColor = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dataGridViewColor = new System.Windows.Forms.DataGridView();
-            this.CloumnColorManager = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExitSizeName = new System.Windows.Forms.Button();
+            this.cbSize = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupMain = new System.Windows.Forms.GroupBox();
+            this.btnExitQuantityDetails = new System.Windows.Forms.Button();
+            this.btnExitSizeManager = new System.Windows.Forms.Button();
             this.btnAddSize = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelSizeName = new System.Windows.Forms.Label();
+            this.txtSizeName = new System.Windows.Forms.TextBox();
             this.dataGridViewSize = new System.Windows.Forms.DataGridView();
             this.ColumnSizeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccount)).BeginInit();
+            this.labelTotalQuantity = new System.Windows.Forms.Label();
+            this.labelQuantity = new System.Windows.Forms.Label();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.labelCategory = new System.Windows.Forms.Label();
+            this.btnCategoryManager = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtProductPrice = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupSizeManager.SuspendLayout();
-            this.groupColorManager.SuspendLayout();
-            this.groupCategoryManager.SuspendLayout();
-            this.groupQuantity.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantity)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.groupMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSize)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,42 +111,42 @@ namespace Project_PRN {
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(15, 11);
+            this.label1.Location = new System.Drawing.Point(15, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(400, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "List product";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridViewAccount
+            // dataGridViewProduct
             // 
-            this.dataGridViewAccount.AllowUserToAddRows = false;
-            this.dataGridViewAccount.AllowUserToDeleteRows = false;
-            this.dataGridViewAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridViewAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewProduct.AllowUserToAddRows = false;
+            this.dataGridViewProduct.AllowUserToDeleteRows = false;
+            this.dataGridViewProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnSt,
             this.ColumnID,
             this.ColumnName,
             this.ColumnCategory,
             this.CloumnQuantity});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle36.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewAccount.DefaultCellStyle = dataGridViewCellStyle36;
-            this.dataGridViewAccount.Location = new System.Drawing.Point(0, 2);
-            this.dataGridViewAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridViewAccount.Name = "dataGridViewAccount";
-            this.dataGridViewAccount.ReadOnly = true;
-            this.dataGridViewAccount.RowHeadersWidth = 51;
-            this.dataGridViewAccount.RowTemplate.Height = 24;
-            this.dataGridViewAccount.Size = new System.Drawing.Size(883, 318);
-            this.dataGridViewAccount.TabIndex = 1;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewProduct.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewProduct.Location = new System.Drawing.Point(0, -9);
+            this.dataGridViewProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewProduct.Name = "dataGridViewProduct";
+            this.dataGridViewProduct.ReadOnly = true;
+            this.dataGridViewProduct.RowHeadersWidth = 51;
+            this.dataGridViewProduct.RowTemplate.Height = 24;
+            this.dataGridViewProduct.Size = new System.Drawing.Size(883, 318);
+            this.dataGridViewProduct.TabIndex = 1;
             // 
             // ColumnSt
             // 
@@ -194,11 +192,11 @@ namespace Project_PRN {
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.dataGridViewAccount);
-            this.panel1.Location = new System.Drawing.Point(12, 60);
+            this.panel1.Controls.Add(this.dataGridViewProduct);
+            this.panel1.Location = new System.Drawing.Point(12, 49);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 331);
+            this.panel1.Size = new System.Drawing.Size(1229, 319);
             this.panel1.TabIndex = 2;
             // 
             // groupBox2
@@ -207,7 +205,7 @@ namespace Project_PRN {
             this.groupBox2.Controls.Add(this.btnSearch);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(911, 28);
+            this.groupBox2.Location = new System.Drawing.Point(911, 17);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -220,20 +218,19 @@ namespace Project_PRN {
             // 
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(35, 78);
+            this.txtSearch.Location = new System.Drawing.Point(35, 67);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(263, 48);
             this.txtSearch.TabIndex = 4;
-            this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnSearch
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(35, 188);
+            this.btnSearch.Location = new System.Drawing.Point(35, 177);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(263, 59);
@@ -241,292 +238,222 @@ namespace Project_PRN {
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // btnUpdate
+            // btnExitColorManager
             // 
-            this.btnUpdate.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(507, 770);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(263, 59);
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnExitColorManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitColorManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitColorManager.ForeColor = System.Drawing.Color.White;
+            this.btnExitColorManager.Location = new System.Drawing.Point(305, 224);
+            this.btnExitColorManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExitColorManager.Name = "btnExitColorManager";
+            this.btnExitColorManager.Size = new System.Drawing.Size(217, 44);
+            this.btnExitColorManager.TabIndex = 15;
+            this.btnExitColorManager.Text = "Exit";
+            this.btnExitColorManager.UseVisualStyleBackColor = true;
+            this.btnExitColorManager.Click += new System.EventHandler(this.btnExitColorManager_Click);
             // 
-            // btnDelete
+            // btnAddColor
             // 
-            this.btnDelete.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(853, 770);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(263, 59);
-            this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnAddColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddColor.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddColor.ForeColor = System.Drawing.Color.White;
+            this.btnAddColor.Location = new System.Drawing.Point(305, 154);
+            this.btnAddColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddColor.Name = "btnAddColor";
+            this.btnAddColor.Size = new System.Drawing.Size(217, 44);
+            this.btnAddColor.TabIndex = 12;
+            this.btnAddColor.Text = "Add";
+            this.btnAddColor.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
+            // labelColorName
             // 
-            this.btnAdd.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAdd.Location = new System.Drawing.Point(148, 770);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(263, 59);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.labelColorName.BackColor = System.Drawing.Color.Transparent;
+            this.labelColorName.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelColorName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelColorName.Location = new System.Drawing.Point(284, 3);
+            this.labelColorName.Name = "labelColorName";
+            this.labelColorName.Size = new System.Drawing.Size(269, 49);
+            this.labelColorName.TabIndex = 12;
+            this.labelColorName.Text = "Color Name";
+            this.labelColorName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel2
+            // txtColorName
             // 
-            this.panel2.BackgroundImage = global::Project_PRN.Properties.Resources.panelInformation;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Location = new System.Drawing.Point(12, 396);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1229, 369);
-            this.panel2.TabIndex = 3;
+            this.txtColorName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtColorName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColorName.Location = new System.Drawing.Point(289, 54);
+            this.txtColorName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtColorName.Multiline = true;
+            this.txtColorName.Name = "txtColorName";
+            this.txtColorName.Size = new System.Drawing.Size(263, 48);
+            this.txtColorName.TabIndex = 5;
             // 
-            // groupBox3
+            // dataGridViewColor
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.txtProductPrice);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.txtProductName);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.txtProductID);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(21, 32);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(577, 304);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
+            this.dataGridViewColor.AllowUserToAddRows = false;
+            this.dataGridViewColor.AllowUserToDeleteRows = false;
+            this.dataGridViewColor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridViewColor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewColor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CloumnColorManager});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewColor.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewColor.Location = new System.Drawing.Point(57, 19);
+            this.dataGridViewColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewColor.Name = "dataGridViewColor";
+            this.dataGridViewColor.ReadOnly = true;
+            this.dataGridViewColor.RowHeadersWidth = 51;
+            this.dataGridViewColor.RowTemplate.Height = 24;
+            this.dataGridViewColor.Size = new System.Drawing.Size(200, 252);
+            this.dataGridViewColor.TabIndex = 6;
             // 
-            // label2
+            // CloumnColorManager
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(40, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 49);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ID";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CloumnColorManager.HeaderText = "Color";
+            this.CloumnColorManager.MinimumWidth = 6;
+            this.CloumnColorManager.Name = "CloumnColorManager";
+            this.CloumnColorManager.ReadOnly = true;
+            this.CloumnColorManager.Width = 97;
             // 
-            // txtProductPrice
+            // btnExitCategoryManager
             // 
-            this.txtProductPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.txtProductPrice.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductPrice.Location = new System.Drawing.Point(172, 215);
-            this.txtProductPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductPrice.Multiline = true;
-            this.txtProductPrice.Name = "txtProductPrice";
-            this.txtProductPrice.Size = new System.Drawing.Size(371, 48);
-            this.txtProductPrice.TabIndex = 7;
+            this.btnExitCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitCategoryManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitCategoryManager.ForeColor = System.Drawing.Color.White;
+            this.btnExitCategoryManager.Location = new System.Drawing.Point(299, 242);
+            this.btnExitCategoryManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExitCategoryManager.Name = "btnExitCategoryManager";
+            this.btnExitCategoryManager.Size = new System.Drawing.Size(217, 44);
+            this.btnExitCategoryManager.TabIndex = 14;
+            this.btnExitCategoryManager.Text = "Exit";
+            this.btnExitCategoryManager.UseVisualStyleBackColor = true;
+            this.btnExitCategoryManager.Click += new System.EventHandler(this.btnExitCategoryManager_Click);
             // 
-            // label4
+            // btnUpdateCategory
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(40, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 49);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Name";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateCategory.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCategory.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCategory.Location = new System.Drawing.Point(299, 180);
+            this.btnUpdateCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateCategory.Name = "btnUpdateCategory";
+            this.btnUpdateCategory.Size = new System.Drawing.Size(217, 44);
+            this.btnUpdateCategory.TabIndex = 13;
+            this.btnUpdateCategory.Text = "Update";
+            this.btnUpdateCategory.UseVisualStyleBackColor = true;
             // 
-            // txtProductName
+            // btnAddCategory
             // 
-            this.txtProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.txtProductName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductName.Location = new System.Drawing.Point(172, 113);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductName.Multiline = true;
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(371, 48);
-            this.txtProductName.TabIndex = 6;
+            this.btnAddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCategory.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCategory.ForeColor = System.Drawing.Color.White;
+            this.btnAddCategory.Location = new System.Drawing.Point(299, 123);
+            this.btnAddCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddCategory.Name = "btnAddCategory";
+            this.btnAddCategory.Size = new System.Drawing.Size(217, 44);
+            this.btnAddCategory.TabIndex = 12;
+            this.btnAddCategory.Text = "Add";
+            this.btnAddCategory.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // labelCategoryName
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(76, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 44);
-            this.label5.TabIndex = 3;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelCategoryName.BackColor = System.Drawing.Color.Transparent;
+            this.labelCategoryName.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoryName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelCategoryName.Location = new System.Drawing.Point(268, 3);
+            this.labelCategoryName.Name = "labelCategoryName";
+            this.labelCategoryName.Size = new System.Drawing.Size(269, 49);
+            this.labelCategoryName.TabIndex = 12;
+            this.labelCategoryName.Text = "Category Name";
+            this.labelCategoryName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtProductID
+            // txtCategoryName
             // 
-            this.txtProductID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.txtProductID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductID.Location = new System.Drawing.Point(172, 23);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductID.Multiline = true;
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(371, 48);
-            this.txtProductID.TabIndex = 5;
+            this.txtCategoryName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtCategoryName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.Location = new System.Drawing.Point(272, 54);
+            this.txtCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCategoryName.Multiline = true;
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.Size = new System.Drawing.Size(263, 48);
+            this.txtCategoryName.TabIndex = 5;
             // 
-            // label6
+            // dataGridViewCate
             // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(40, 215);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 49);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Price";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dataGridViewCate.AllowUserToAddRows = false;
+            this.dataGridViewCate.AllowUserToDeleteRows = false;
+            this.dataGridViewCate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridViewCate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnCategoryName});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCate.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCate.Location = new System.Drawing.Point(40, 19);
+            this.dataGridViewCate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewCate.Name = "dataGridViewCate";
+            this.dataGridViewCate.ReadOnly = true;
+            this.dataGridViewCate.RowHeadersWidth = 51;
+            this.dataGridViewCate.RowTemplate.Height = 24;
+            this.dataGridViewCate.Size = new System.Drawing.Size(221, 250);
+            this.dataGridViewCate.TabIndex = 6;
             // 
-            // groupSizeManager
+            // ColumnCategoryName
             // 
-            this.groupSizeManager.BackColor = System.Drawing.Color.Transparent;
-            this.groupSizeManager.Controls.Add(this.btnExitSizeName);
-            this.groupSizeManager.Controls.Add(this.btnAddSize);
-            this.groupSizeManager.Controls.Add(this.label12);
-            this.groupSizeManager.Controls.Add(this.textBox2);
-            this.groupSizeManager.Controls.Add(this.dataGridViewSize);
-            this.groupSizeManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupSizeManager.ForeColor = System.Drawing.Color.Aqua;
-            this.groupSizeManager.Location = new System.Drawing.Point(1301, 387);
-            this.groupSizeManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupSizeManager.Name = "groupSizeManager";
-            this.groupSizeManager.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupSizeManager.Size = new System.Drawing.Size(587, 304);
-            this.groupSizeManager.TabIndex = 14;
-            this.groupSizeManager.TabStop = false;
-            this.groupSizeManager.Text = "Size Manager";
+            this.ColumnCategoryName.HeaderText = "Category";
+            this.ColumnCategoryName.MinimumWidth = 6;
+            this.ColumnCategoryName.Name = "ColumnCategoryName";
+            this.ColumnCategoryName.ReadOnly = true;
+            this.ColumnCategoryName.Width = 112;
             // 
-            // groupColorManager
+            // labelEachQuantity
             // 
-            this.groupColorManager.BackColor = System.Drawing.Color.Transparent;
-            this.groupColorManager.Controls.Add(this.btnExitColorManager);
-            this.groupColorManager.Controls.Add(this.btnAddColor);
-            this.groupColorManager.Controls.Add(this.label13);
-            this.groupColorManager.Controls.Add(this.textBox3);
-            this.groupColorManager.Controls.Add(this.dataGridViewColor);
-            this.groupColorManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupColorManager.ForeColor = System.Drawing.Color.Aqua;
-            this.groupColorManager.Location = new System.Drawing.Point(1301, 718);
-            this.groupColorManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupColorManager.Name = "groupColorManager";
-            this.groupColorManager.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupColorManager.Size = new System.Drawing.Size(587, 304);
-            this.groupColorManager.TabIndex = 16;
-            this.groupColorManager.TabStop = false;
-            this.groupColorManager.Text = "Color Manager";
+            this.labelEachQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.labelEachQuantity.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEachQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelEachQuantity.Location = new System.Drawing.Point(403, 163);
+            this.labelEachQuantity.Name = "labelEachQuantity";
+            this.labelEachQuantity.Size = new System.Drawing.Size(108, 23);
+            this.labelEachQuantity.TabIndex = 19;
+            this.labelEachQuantity.Text = "Quantity";
+            this.labelEachQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // groupCategoryManager
+            // labelColor
             // 
-            this.groupCategoryManager.BackColor = System.Drawing.Color.Transparent;
-            this.groupCategoryManager.Controls.Add(this.btnExitCategoryManager);
-            this.groupCategoryManager.Controls.Add(this.btnUpdateCategory);
-            this.groupCategoryManager.Controls.Add(this.btnAddCategory);
-            this.groupCategoryManager.Controls.Add(this.label8);
-            this.groupCategoryManager.Controls.Add(this.textBox1);
-            this.groupCategoryManager.Controls.Add(this.dataGridViewCate);
-            this.groupCategoryManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupCategoryManager.ForeColor = System.Drawing.Color.Aqua;
-            this.groupCategoryManager.Location = new System.Drawing.Point(1436, 53);
-            this.groupCategoryManager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupCategoryManager.Name = "groupCategoryManager";
-            this.groupCategoryManager.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupCategoryManager.Size = new System.Drawing.Size(587, 304);
-            this.groupCategoryManager.TabIndex = 12;
-            this.groupCategoryManager.TabStop = false;
-            this.groupCategoryManager.Text = "Category Manager";
+            this.labelColor.BackColor = System.Drawing.Color.Transparent;
+            this.labelColor.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelColor.Location = new System.Drawing.Point(403, 93);
+            this.labelColor.Name = "labelColor";
+            this.labelColor.Size = new System.Drawing.Size(108, 23);
+            this.labelColor.TabIndex = 18;
+            this.labelColor.Text = "Color";
+            this.labelColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // groupQuantity
+            // labelSize
             // 
-            this.groupQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.groupQuantity.Controls.Add(this.label11);
-            this.groupQuantity.Controls.Add(this.label10);
-            this.groupQuantity.Controls.Add(this.label9);
-            this.groupQuantity.Controls.Add(this.groupBox1);
-            this.groupQuantity.Controls.Add(this.btnAddQuantity);
-            this.groupQuantity.Controls.Add(this.txtQuantity);
-            this.groupQuantity.Controls.Add(this.cbColor);
-            this.groupQuantity.Controls.Add(this.cbCatgory);
-            this.groupQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupQuantity.ForeColor = System.Drawing.Color.Aqua;
-            this.groupQuantity.Location = new System.Drawing.Point(1293, 340);
-            this.groupQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupQuantity.Name = "groupQuantity";
-            this.groupQuantity.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupQuantity.Size = new System.Drawing.Size(587, 304);
-            this.groupQuantity.TabIndex = 14;
-            this.groupQuantity.TabStop = false;
-            this.groupQuantity.Text = "Quantity details";
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label11.Location = new System.Drawing.Point(412, 166);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 23);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Quantity";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(412, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(108, 23);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Color";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(408, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 30);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Size";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dataGridViewQuantity);
-            this.groupBox1.Controls.Add(this.btnSizeManager);
-            this.groupBox1.Controls.Add(this.btnColorManager);
-            this.groupBox1.Location = new System.Drawing.Point(8, 18);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(397, 278);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
+            this.labelSize.BackColor = System.Drawing.Color.Transparent;
+            this.labelSize.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelSize.Location = new System.Drawing.Point(403, 17);
+            this.labelSize.Name = "labelSize";
+            this.labelSize.Size = new System.Drawing.Size(108, 30);
+            this.labelSize.TabIndex = 12;
+            this.labelSize.Text = "Size";
+            this.labelSize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dataGridViewQuantity
             // 
@@ -538,16 +465,16 @@ namespace Project_PRN {
             this.ColumnSize,
             this.ColumnColor,
             this.ColumnQuantity});
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle37.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewQuantity.DefaultCellStyle = dataGridViewCellStyle37;
-            this.dataGridViewQuantity.Location = new System.Drawing.Point(12, 18);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewQuantity.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewQuantity.Location = new System.Drawing.Point(8, 7);
             this.dataGridViewQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewQuantity.Name = "dataGridViewQuantity";
             this.dataGridViewQuantity.ReadOnly = true;
@@ -555,7 +482,6 @@ namespace Project_PRN {
             this.dataGridViewQuantity.RowTemplate.Height = 24;
             this.dataGridViewQuantity.Size = new System.Drawing.Size(373, 194);
             this.dataGridViewQuantity.TabIndex = 14;
-            this.dataGridViewQuantity.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewQuantity_CellClick);
             // 
             // ColumnSize
             // 
@@ -586,10 +512,10 @@ namespace Project_PRN {
             this.btnSizeManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSizeManager.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSizeManager.ForeColor = System.Drawing.Color.White;
-            this.btnSizeManager.Location = new System.Drawing.Point(225, 218);
+            this.btnSizeManager.Location = new System.Drawing.Point(109, 235);
             this.btnSizeManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSizeManager.Name = "btnSizeManager";
-            this.btnSizeManager.Size = new System.Drawing.Size(160, 44);
+            this.btnSizeManager.Size = new System.Drawing.Size(82, 44);
             this.btnSizeManager.TabIndex = 16;
             this.btnSizeManager.Text = "Size Manager";
             this.btnSizeManager.UseVisualStyleBackColor = true;
@@ -600,10 +526,10 @@ namespace Project_PRN {
             this.btnColorManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColorManager.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColorManager.ForeColor = System.Drawing.Color.White;
-            this.btnColorManager.Location = new System.Drawing.Point(13, 218);
+            this.btnColorManager.Location = new System.Drawing.Point(8, 235);
             this.btnColorManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnColorManager.Name = "btnColorManager";
-            this.btnColorManager.Size = new System.Drawing.Size(160, 44);
+            this.btnColorManager.Size = new System.Drawing.Size(95, 44);
             this.btnColorManager.TabIndex = 12;
             this.btnColorManager.Text = "Color Manager";
             this.btnColorManager.UseVisualStyleBackColor = true;
@@ -614,7 +540,7 @@ namespace Project_PRN {
             this.btnAddQuantity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddQuantity.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddQuantity.ForeColor = System.Drawing.Color.White;
-            this.btnAddQuantity.Location = new System.Drawing.Point(413, 236);
+            this.btnAddQuantity.Location = new System.Drawing.Point(404, 233);
             this.btnAddQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddQuantity.Name = "btnAddQuantity";
             this.btnAddQuantity.Size = new System.Drawing.Size(156, 44);
@@ -626,7 +552,7 @@ namespace Project_PRN {
             // 
             this.txtQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtQuantity.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(413, 192);
+            this.txtQuantity.Location = new System.Drawing.Point(404, 189);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuantity.Multiline = true;
             this.txtQuantity.Name = "txtQuantity";
@@ -638,225 +564,199 @@ namespace Project_PRN {
             this.cbColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbColor.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbColor.FormattingEnabled = true;
-            this.cbColor.Location = new System.Drawing.Point(413, 123);
-            this.cbColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbColor.Location = new System.Drawing.Point(404, 120);
+            this.cbColor.Margin = new System.Windows.Forms.Padding(4);
             this.cbColor.Name = "cbColor";
             this.cbColor.Size = new System.Drawing.Size(155, 32);
             this.cbColor.TabIndex = 15;
             // 
-            // cbCatgory
+            // cbSize
             // 
-            this.cbCatgory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbCatgory.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCatgory.FormattingEnabled = true;
-            this.cbCatgory.Location = new System.Drawing.Point(413, 53);
-            this.cbCatgory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbCatgory.Name = "cbCatgory";
-            this.cbCatgory.Size = new System.Drawing.Size(155, 32);
-            this.cbCatgory.TabIndex = 12;
+            this.cbSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbSize.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSize.FormattingEnabled = true;
+            this.cbSize.Location = new System.Drawing.Point(404, 50);
+            this.cbSize.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Size = new System.Drawing.Size(155, 32);
+            this.cbSize.TabIndex = 12;
             // 
-            // btnExitCategoryManager
+            // btnCancel
             // 
-            this.btnExitCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitCategoryManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitCategoryManager.ForeColor = System.Drawing.Color.White;
-            this.btnExitCategoryManager.Location = new System.Drawing.Point(279, 254);
-            this.btnExitCategoryManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExitCategoryManager.Name = "btnExitCategoryManager";
-            this.btnExitCategoryManager.Size = new System.Drawing.Size(217, 44);
-            this.btnExitCategoryManager.TabIndex = 14;
-            this.btnExitCategoryManager.Text = "Exit";
-            this.btnExitCategoryManager.UseVisualStyleBackColor = true;
-            this.btnExitCategoryManager.Click += new System.EventHandler(this.btnExitCategoryManager_Click);
+            this.btnCancel.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCancel.Location = new System.Drawing.Point(681, 736);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(263, 59);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnUpdateCategory
+            // btnOK
             // 
-            this.btnUpdateCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateCategory.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCategory.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateCategory.Location = new System.Drawing.Point(279, 192);
-            this.btnUpdateCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateCategory.Name = "btnUpdateCategory";
-            this.btnUpdateCategory.Size = new System.Drawing.Size(217, 44);
-            this.btnUpdateCategory.TabIndex = 13;
-            this.btnUpdateCategory.Text = "Update";
-            this.btnUpdateCategory.UseVisualStyleBackColor = true;
+            this.btnOK.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
+            this.btnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOK.FlatAppearance.BorderSize = 0;
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.Transparent;
+            this.btnOK.Location = new System.Drawing.Point(341, 736);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(263, 59);
+            this.btnOK.TabIndex = 8;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // btnAddCategory
+            // btnDelete
             // 
-            this.btnAddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCategory.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCategory.ForeColor = System.Drawing.Color.White;
-            this.btnAddCategory.Location = new System.Drawing.Point(279, 135);
-            this.btnAddCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddCategory.Name = "btnAddCategory";
-            this.btnAddCategory.Size = new System.Drawing.Size(217, 44);
-            this.btnAddCategory.TabIndex = 12;
-            this.btnAddCategory.Text = "Add";
-            this.btnAddCategory.UseVisualStyleBackColor = true;
+            this.btnDelete.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(858, 736);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(263, 59);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // label8
+            // btnUpdate
             // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(247, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(269, 49);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Category Name";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(512, 736);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(263, 59);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // textBox1
+            // btnAdd
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(252, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 48);
-            this.textBox1.TabIndex = 5;
+            this.btnAdd.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Location = new System.Drawing.Point(153, 736);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(263, 59);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // dataGridViewCate
+            // panel2
             // 
-            this.dataGridViewCate.AllowUserToAddRows = false;
-            this.dataGridViewCate.AllowUserToDeleteRows = false;
-            this.dataGridViewCate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridViewCate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnCategoryName});
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle38.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCate.DefaultCellStyle = dataGridViewCellStyle38;
-            this.dataGridViewCate.Location = new System.Drawing.Point(20, 31);
-            this.dataGridViewCate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridViewCate.Name = "dataGridViewCate";
-            this.dataGridViewCate.ReadOnly = true;
-            this.dataGridViewCate.RowHeadersWidth = 51;
-            this.dataGridViewCate.RowTemplate.Height = 24;
-            this.dataGridViewCate.Size = new System.Drawing.Size(221, 250);
-            this.dataGridViewCate.TabIndex = 6;
+            this.panel2.BackgroundImage = global::Project_PRN.Properties.Resources.panelInformation;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.groupMain);
+            this.panel2.Controls.Add(this.groupBox3);
+            this.panel2.Location = new System.Drawing.Point(12, 372);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1229, 349);
+            this.panel2.TabIndex = 3;
             // 
-            // ColumnCategoryName
+            // groupMain
             // 
-            this.ColumnCategoryName.HeaderText = "Category";
-            this.ColumnCategoryName.MinimumWidth = 6;
-            this.ColumnCategoryName.Name = "ColumnCategoryName";
-            this.ColumnCategoryName.ReadOnly = true;
-            this.ColumnCategoryName.Width = 112;
+            this.groupMain.BackColor = System.Drawing.Color.Transparent;
+            this.groupMain.Controls.Add(this.btnSizeManager);
+            this.groupMain.Controls.Add(this.btnExitQuantityDetails);
+            this.groupMain.Controls.Add(this.btnColorManager);
+            this.groupMain.Controls.Add(this.dataGridViewCate);
+            this.groupMain.Controls.Add(this.btnExitColorManager);
+            this.groupMain.Controls.Add(this.btnExitSizeManager);
+            this.groupMain.Controls.Add(this.btnAddColor);
+            this.groupMain.Controls.Add(this.labelColorName);
+            this.groupMain.Controls.Add(this.btnAddSize);
+            this.groupMain.Controls.Add(this.dataGridViewColor);
+            this.groupMain.Controls.Add(this.labelEachQuantity);
+            this.groupMain.Controls.Add(this.labelSizeName);
+            this.groupMain.Controls.Add(this.btnExitCategoryManager);
+            this.groupMain.Controls.Add(this.txtSizeName);
+            this.groupMain.Controls.Add(this.dataGridViewSize);
+            this.groupMain.Controls.Add(this.btnUpdateCategory);
+            this.groupMain.Controls.Add(this.labelColor);
+            this.groupMain.Controls.Add(this.btnAddCategory);
+            this.groupMain.Controls.Add(this.dataGridViewQuantity);
+            this.groupMain.Controls.Add(this.labelCategoryName);
+            this.groupMain.Controls.Add(this.txtCategoryName);
+            this.groupMain.Controls.Add(this.labelSize);
+            this.groupMain.Controls.Add(this.labelTotalQuantity);
+            this.groupMain.Controls.Add(this.btnAddQuantity);
+            this.groupMain.Controls.Add(this.labelQuantity);
+            this.groupMain.Controls.Add(this.txtQuantity);
+            this.groupMain.Controls.Add(this.cbCategory);
+            this.groupMain.Controls.Add(this.cbColor);
+            this.groupMain.Controls.Add(this.labelCategory);
+            this.groupMain.Controls.Add(this.cbSize);
+            this.groupMain.Controls.Add(this.btnCategoryManager);
+            this.groupMain.Controls.Add(this.txtColorName);
+            this.groupMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupMain.ForeColor = System.Drawing.Color.Aqua;
+            this.groupMain.Location = new System.Drawing.Point(622, 21);
+            this.groupMain.Margin = new System.Windows.Forms.Padding(4);
+            this.groupMain.Name = "groupMain";
+            this.groupMain.Padding = new System.Windows.Forms.Padding(4);
+            this.groupMain.Size = new System.Drawing.Size(576, 304);
+            this.groupMain.TabIndex = 15;
+            this.groupMain.TabStop = false;
             // 
-            // btnExitColorManager
+            // btnExitQuantityDetails
             // 
-            this.btnExitColorManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitColorManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitColorManager.ForeColor = System.Drawing.Color.White;
-            this.btnExitColorManager.Location = new System.Drawing.Point(268, 236);
-            this.btnExitColorManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExitColorManager.Name = "btnExitColorManager";
-            this.btnExitColorManager.Size = new System.Drawing.Size(217, 44);
-            this.btnExitColorManager.TabIndex = 15;
-            this.btnExitColorManager.Text = "Exit";
-            this.btnExitColorManager.UseVisualStyleBackColor = true;
-            this.btnExitColorManager.Click += new System.EventHandler(this.btnExitColorManager_Click);
+            this.btnExitQuantityDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitQuantityDetails.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitQuantityDetails.ForeColor = System.Drawing.Color.White;
+            this.btnExitQuantityDetails.Location = new System.Drawing.Point(204, 235);
+            this.btnExitQuantityDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExitQuantityDetails.Name = "btnExitQuantityDetails";
+            this.btnExitQuantityDetails.Size = new System.Drawing.Size(95, 44);
+            this.btnExitQuantityDetails.TabIndex = 23;
+            this.btnExitQuantityDetails.Text = "Exit";
+            this.btnExitQuantityDetails.UseVisualStyleBackColor = true;
+            this.btnExitQuantityDetails.Click += new System.EventHandler(this.btnExitQuantityDetails_Click);
             // 
-            // btnAddColor
+            // btnExitSizeManager
             // 
-            this.btnAddColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddColor.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddColor.ForeColor = System.Drawing.Color.White;
-            this.btnAddColor.Location = new System.Drawing.Point(268, 166);
-            this.btnAddColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddColor.Name = "btnAddColor";
-            this.btnAddColor.Size = new System.Drawing.Size(217, 44);
-            this.btnAddColor.TabIndex = 12;
-            this.btnAddColor.Text = "Add";
-            this.btnAddColor.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label13.Location = new System.Drawing.Point(247, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(269, 49);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Color Name";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(252, 66);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(263, 48);
-            this.textBox3.TabIndex = 5;
-            // 
-            // dataGridViewColor
-            // 
-            this.dataGridViewColor.AllowUserToAddRows = false;
-            this.dataGridViewColor.AllowUserToDeleteRows = false;
-            this.dataGridViewColor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridViewColor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewColor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CloumnColorManager});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle39.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewColor.DefaultCellStyle = dataGridViewCellStyle39;
-            this.dataGridViewColor.Location = new System.Drawing.Point(20, 31);
-            this.dataGridViewColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridViewColor.Name = "dataGridViewColor";
-            this.dataGridViewColor.ReadOnly = true;
-            this.dataGridViewColor.RowHeadersWidth = 51;
-            this.dataGridViewColor.RowTemplate.Height = 24;
-            this.dataGridViewColor.Size = new System.Drawing.Size(200, 252);
-            this.dataGridViewColor.TabIndex = 6;
-            // 
-            // CloumnColorManager
-            // 
-            this.CloumnColorManager.HeaderText = "Color";
-            this.CloumnColorManager.MinimumWidth = 6;
-            this.CloumnColorManager.Name = "CloumnColorManager";
-            this.CloumnColorManager.ReadOnly = true;
-            this.CloumnColorManager.Width = 97;
-            // 
-            // btnExitSizeName
-            // 
-            this.btnExitSizeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitSizeName.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitSizeName.ForeColor = System.Drawing.Color.White;
-            this.btnExitSizeName.Location = new System.Drawing.Point(268, 236);
-            this.btnExitSizeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExitSizeName.Name = "btnExitSizeName";
-            this.btnExitSizeName.Size = new System.Drawing.Size(217, 44);
-            this.btnExitSizeName.TabIndex = 15;
-            this.btnExitSizeName.Text = "Exit";
-            this.btnExitSizeName.UseVisualStyleBackColor = true;
-            this.btnExitSizeName.Click += new System.EventHandler(this.btnExitSizeName_Click);
+            this.btnExitSizeManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExitSizeManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitSizeManager.ForeColor = System.Drawing.Color.White;
+            this.btnExitSizeManager.Location = new System.Drawing.Point(288, 224);
+            this.btnExitSizeManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExitSizeManager.Name = "btnExitSizeManager";
+            this.btnExitSizeManager.Size = new System.Drawing.Size(217, 44);
+            this.btnExitSizeManager.TabIndex = 15;
+            this.btnExitSizeManager.Text = "Exit";
+            this.btnExitSizeManager.UseVisualStyleBackColor = true;
+            this.btnExitSizeManager.Click += new System.EventHandler(this.btnExitSizeName_Click);
             // 
             // btnAddSize
             // 
             this.btnAddSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSize.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSize.ForeColor = System.Drawing.Color.White;
-            this.btnAddSize.Location = new System.Drawing.Point(268, 166);
+            this.btnAddSize.Location = new System.Drawing.Point(288, 154);
             this.btnAddSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddSize.Name = "btnAddSize";
             this.btnAddSize.Size = new System.Drawing.Size(217, 44);
@@ -864,28 +764,28 @@ namespace Project_PRN {
             this.btnAddSize.Text = "Add";
             this.btnAddSize.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // labelSizeName
             // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label12.Location = new System.Drawing.Point(247, 15);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(269, 49);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Size Name";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelSizeName.BackColor = System.Drawing.Color.Transparent;
+            this.labelSizeName.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSizeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelSizeName.Location = new System.Drawing.Point(267, 3);
+            this.labelSizeName.Name = "labelSizeName";
+            this.labelSizeName.Size = new System.Drawing.Size(269, 49);
+            this.labelSizeName.TabIndex = 12;
+            this.labelSizeName.Text = "Size Name";
+            this.labelSizeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // txtSizeName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(252, 66);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 48);
-            this.textBox2.TabIndex = 5;
+            this.txtSizeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtSizeName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSizeName.Location = new System.Drawing.Point(272, 54);
+            this.txtSizeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSizeName.Multiline = true;
+            this.txtSizeName.Name = "txtSizeName";
+            this.txtSizeName.Size = new System.Drawing.Size(263, 48);
+            this.txtSizeName.TabIndex = 5;
             // 
             // dataGridViewSize
             // 
@@ -895,16 +795,16 @@ namespace Project_PRN {
             this.dataGridViewSize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSize.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnSizeName});
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle40.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewSize.DefaultCellStyle = dataGridViewCellStyle40;
-            this.dataGridViewSize.Location = new System.Drawing.Point(27, 53);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSize.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewSize.Location = new System.Drawing.Point(47, 41);
             this.dataGridViewSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewSize.Name = "dataGridViewSize";
             this.dataGridViewSize.ReadOnly = true;
@@ -921,48 +821,174 @@ namespace Project_PRN {
             this.ColumnSizeName.ReadOnly = true;
             this.ColumnSizeName.Width = 97;
             // 
-            // btnOK
+            // labelTotalQuantity
             // 
-            this.btnOK.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
-            this.btnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOK.FlatAppearance.BorderSize = 0;
-            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.ForeColor = System.Drawing.Color.Transparent;
-            this.btnOK.Location = new System.Drawing.Point(336, 770);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(263, 59);
-            this.btnOK.TabIndex = 8;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.labelTotalQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.labelTotalQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelTotalQuantity.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalQuantity.ForeColor = System.Drawing.Color.White;
+            this.labelTotalQuantity.Location = new System.Drawing.Point(198, 184);
+            this.labelTotalQuantity.Name = "labelTotalQuantity";
+            this.labelTotalQuantity.Size = new System.Drawing.Size(94, 52);
+            this.labelTotalQuantity.TabIndex = 22;
+            this.labelTotalQuantity.Text = "100";
+            this.labelTotalQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTotalQuantity.Click += new System.EventHandler(this.labelTotalQuantity_Click);
             // 
-            // btnCancel
+            // labelQuantity
             // 
-            this.btnCancel.BackgroundImage = global::Project_PRN.Properties.Resources.AccountHome1;
-            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Location = new System.Drawing.Point(676, 770);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(263, 59);
-            this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.labelQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuantity.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelQuantity.Location = new System.Drawing.Point(38, 184);
+            this.labelQuantity.Name = "labelQuantity";
+            this.labelQuantity.Size = new System.Drawing.Size(127, 49);
+            this.labelQuantity.TabIndex = 21;
+            this.labelQuantity.Text = "Quantity";
+            this.labelQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbCategory.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(198, 23);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(298, 36);
+            this.cbCategory.TabIndex = 20;
+            // 
+            // labelCategory
+            // 
+            this.labelCategory.BackColor = System.Drawing.Color.Transparent;
+            this.labelCategory.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelCategory.Location = new System.Drawing.Point(38, 17);
+            this.labelCategory.Name = "labelCategory";
+            this.labelCategory.Size = new System.Drawing.Size(127, 49);
+            this.labelCategory.TabIndex = 8;
+            this.labelCategory.Text = "Category";
+            this.labelCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnCategoryManager
+            // 
+            this.btnCategoryManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoryManager.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoryManager.ForeColor = System.Drawing.Color.White;
+            this.btnCategoryManager.Location = new System.Drawing.Point(243, 74);
+            this.btnCategoryManager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCategoryManager.Name = "btnCategoryManager";
+            this.btnCategoryManager.Size = new System.Drawing.Size(217, 44);
+            this.btnCategoryManager.TabIndex = 12;
+            this.btnCategoryManager.Text = "Category Manager";
+            this.btnCategoryManager.UseVisualStyleBackColor = true;
+            this.btnCategoryManager.Click += new System.EventHandler(this.btnCategoryManager_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.txtProductPrice);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.txtProductName);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.txtProductID);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(21, 21);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(577, 304);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(40, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 49);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ID";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtProductPrice
+            // 
+            this.txtProductPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtProductPrice.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductPrice.Location = new System.Drawing.Point(172, 204);
+            this.txtProductPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProductPrice.Multiline = true;
+            this.txtProductPrice.Name = "txtProductPrice";
+            this.txtProductPrice.Size = new System.Drawing.Size(371, 48);
+            this.txtProductPrice.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(40, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 49);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Name";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtProductName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(172, 102);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProductName.Multiline = true;
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(371, 48);
+            this.txtProductName.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label5.Location = new System.Drawing.Point(76, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(179, 44);
+            this.label5.TabIndex = 3;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtProductID
+            // 
+            this.txtProductID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtProductID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductID.Location = new System.Drawing.Point(172, 12);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtProductID.Multiline = true;
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(371, 48);
+            this.txtProductID.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(40, 204);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 49);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Price";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Admin_ProductForm
             // 
             this.AccessibleDescription = " ";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1995, 858);
-            this.Controls.Add(this.groupQuantity);
-            this.Controls.Add(this.groupCategoryManager);
-            this.Controls.Add(this.groupColorManager);
-            this.Controls.Add(this.groupSizeManager);
+            this.ClientSize = new System.Drawing.Size(1260, 858);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnDelete);
@@ -975,26 +1001,19 @@ namespace Project_PRN {
             this.Name = "Admin_ProductForm";
             this.Text = "Admin_ProductForm";
             this.Load += new System.EventHandler(this.Admin_ProductForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantity)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.groupMain.ResumeLayout(false);
+            this.groupMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSize)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupSizeManager.ResumeLayout(false);
-            this.groupSizeManager.PerformLayout();
-            this.groupColorManager.ResumeLayout(false);
-            this.groupColorManager.PerformLayout();
-            this.groupCategoryManager.ResumeLayout(false);
-            this.groupCategoryManager.PerformLayout();
-            this.groupQuantity.ResumeLayout(false);
-            this.groupQuantity.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1005,7 +1024,7 @@ namespace Project_PRN {
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridViewAccount;
+        private System.Windows.Forms.DataGridView dataGridViewProduct;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1020,13 +1039,11 @@ namespace Project_PRN {
         private System.Windows.Forms.TextBox txtProductID;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.GroupBox groupCategoryManager;
         private System.Windows.Forms.Button btnUpdateCategory;
         private System.Windows.Forms.Button btnAddCategory;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelCategoryName;
+        private System.Windows.Forms.TextBox txtCategoryName;
         private System.Windows.Forms.DataGridView dataGridViewCate;
-        private System.Windows.Forms.GroupBox groupQuantity;
         private System.Windows.Forms.DataGridView dataGridViewQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
@@ -1034,7 +1051,6 @@ namespace Project_PRN {
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn CloumnQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCategoryName;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSize;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnColor;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuantity;
@@ -1043,24 +1059,29 @@ namespace Project_PRN {
         private System.Windows.Forms.Button btnAddQuantity;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.ComboBox cbColor;
-        private System.Windows.Forms.ComboBox cbCatgory;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbSize;
+        private System.Windows.Forms.Label labelEachQuantity;
+        private System.Windows.Forms.Label labelColor;
+        private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Button btnExitCategoryManager;
-        private System.Windows.Forms.GroupBox groupSizeManager;
-        private System.Windows.Forms.Button btnExitSizeName;
-        private System.Windows.Forms.Button btnAddSize;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridViewSize;
-        private System.Windows.Forms.GroupBox groupColorManager;
         private System.Windows.Forms.Button btnExitColorManager;
         private System.Windows.Forms.Button btnAddColor;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label labelColorName;
+        private System.Windows.Forms.TextBox txtColorName;
         private System.Windows.Forms.DataGridView dataGridViewColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSizeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn CloumnColorManager;
+        private System.Windows.Forms.GroupBox groupMain;
+        private System.Windows.Forms.Button btnCategoryManager;
+        private System.Windows.Forms.Label labelQuantity;
+        private System.Windows.Forms.ComboBox cbCategory;
+        private System.Windows.Forms.Label labelCategory;
+        private System.Windows.Forms.Label labelTotalQuantity;
+        private System.Windows.Forms.Button btnExitSizeManager;
+        private System.Windows.Forms.Button btnAddSize;
+        private System.Windows.Forms.Label labelSizeName;
+        private System.Windows.Forms.TextBox txtSizeName;
+        private System.Windows.Forms.DataGridView dataGridViewSize;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSizeName;
+        private System.Windows.Forms.Button btnExitQuantityDetails;
     }
 }

@@ -38,7 +38,7 @@ namespace Project_PRN {
             this.labelBillUnconfirm = new System.Windows.Forms.Label();
             this.labelTotalBill = new System.Windows.Forms.Label();
             this.labelBillConfirm = new System.Windows.Forms.Label();
-            this.labelBill = new System.Windows.Forms.Label();
+            this.labelOrder = new System.Windows.Forms.Label();
             this.panelProduct = new System.Windows.Forms.Panel();
             this.labelTotalProduct = new System.Windows.Forms.Label();
             this.labelProduct = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@ namespace Project_PRN {
             this.panelBill.Controls.Add(this.labelBillUnconfirm);
             this.panelBill.Controls.Add(this.labelTotalBill);
             this.panelBill.Controls.Add(this.labelBillConfirm);
-            this.panelBill.Controls.Add(this.labelBill);
+            this.panelBill.Controls.Add(this.labelOrder);
             this.panelBill.Location = new System.Drawing.Point(902, 35);
             this.panelBill.Name = "panelBill";
             this.panelBill.Size = new System.Drawing.Size(317, 261);
@@ -109,17 +109,17 @@ namespace Project_PRN {
             this.labelBillConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelBillConfirm.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartBill_MouseClick);
             // 
-            // labelBill
+            // labelOrder
             // 
-            this.labelBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBill.ForeColor = System.Drawing.Color.White;
-            this.labelBill.Location = new System.Drawing.Point(23, 21);
-            this.labelBill.Name = "labelBill";
-            this.labelBill.Size = new System.Drawing.Size(255, 101);
-            this.labelBill.TabIndex = 4;
-            this.labelBill.Text = "Bill";
-            this.labelBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelBill.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartBill_MouseClick);
+            this.labelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOrder.ForeColor = System.Drawing.Color.White;
+            this.labelOrder.Location = new System.Drawing.Point(23, 21);
+            this.labelOrder.Name = "labelOrder";
+            this.labelOrder.Size = new System.Drawing.Size(255, 101);
+            this.labelOrder.TabIndex = 4;
+            this.labelOrder.Text = "Order";
+            this.labelOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelOrder.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chartBill_MouseClick);
             // 
             // panelProduct
             // 
@@ -347,7 +347,7 @@ namespace Project_PRN {
         private System.Windows.Forms.Label labelBillUnconfirm;
         private System.Windows.Forms.Label labelTotalBill;
         private System.Windows.Forms.Label labelBillConfirm;
-        private System.Windows.Forms.Label labelBill;
+        private System.Windows.Forms.Label labelOrder;
         private System.Windows.Forms.Label labelTotalProduct;
         private System.Windows.Forms.Label labelProduct;
         private System.Windows.Forms.Label labelAccountUser;
