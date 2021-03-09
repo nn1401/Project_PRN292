@@ -29,8 +29,6 @@ namespace Project_PRN {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = Color.Transparent;
             this.TransparencyKey = BackColor;
-
-<<<<<<< HEAD
             //
             dataGridViewProduct.BorderStyle = BorderStyle.None;
             dataGridViewProduct.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
@@ -95,9 +93,6 @@ namespace Project_PRN {
             dataGridViewSize.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dataGridViewSize.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             //
-=======
-            ClearGroup();
->>>>>>> 039cb8dc2a2c76c90f611656570a23af5c53f736
         }
 
 
