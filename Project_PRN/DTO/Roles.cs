@@ -21,6 +21,11 @@ namespace Project_PRN
             RoleId = roleId;
         }
 
+        public Roles(string roleName)
+        {
+            RoleName = roleName;
+        }
+
         public Roles()
         {
         }

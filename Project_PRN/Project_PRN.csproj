@@ -71,6 +71,20 @@
     <Compile Include="Admin_ProductForm.Designer.cs">
       <DependentUpon>Admin_ProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection\ConnectDB.cs" />
+    <Compile Include="DAO\CategoryDAO.cs" />
+    <Compile Include="DAO\ColorDAO.cs" />
+    <Compile Include="DAO\OrderDAO.cs" />
+    <Compile Include="DTO\Orders.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DTO\Categories.cs" />
+    <Compile Include="DTO\Colors.cs" />
+    <Compile Include="DTO\OrderDetails.cs" />
+    <Compile Include="DTO\Products.cs" />
+    <Compile Include="DTO\Quantitys.cs" />
+    <Compile Include="DTO\Roles.cs" />
+    <Compile Include="DTO\Sizes.cs" />
+    <Compile Include="DTO\Users.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,5 +225,6 @@
   <ItemGroup>
     <None Include="Resources\AccountHome1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

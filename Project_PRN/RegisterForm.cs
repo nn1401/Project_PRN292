@@ -47,5 +47,63 @@ namespace Project_PRN {
             this.Close();
             form.Show();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+            List<Users> list = new List<Users>();
+            list = UserDAO.getAllUser();
+
+
+            Users user = new Users();
+            try
+            {
+                if(txtUsername.Text == "" || txtPassword.Text == "" || txtFullname.Text == "" || txtAddress.Text == "" || txtPhone.Text == "" || txt.Text == "")
+                {
+                    MessageBox.Show("All fields cannot be empty");
+                }
+                else
+                {
+
+                    if (txtUsername.Text.Length < 5)
+                    {
+                        MessageBox.Show("Please enter an username greater than 5 characters!!!");
+                    }                    
+                    else if (txtPhone.Text.Length > 15 || txtPhone.Text.Length < 9)
+                    {
+                        MessageBox.Show("Please enter a phone number valid!!!");
+                    }
+                    else if (txtPassword.Text.Length < 5)
+                    {
+                        MessageBox.Show("Please enter an password greater than 5 characters!!!");
+                    }
+                    else if (txtPassword.Text != txt.Text)
+                    {
+                        MessageBox.Show("Those passwords didn’t match. Try again.");
+                    }
+                    else
+                    {
+                        bool flag = false;
+                        foreach (Users us in list)
+                        {
+                            if(txtUsername.Text == us.UserID)
+                            {
+                                MessageBox.Show("Account already exists!!!");
+                                flag = true;
+                            }
+                        }
+                        if(flag == false)
+                        {
+                            user = new Users(txtUsername.Text, txtPassword.Text, txtFullname.Text, txtAddress.Text, txtPhone.Text, new Roles(2));
+                            UserDAO.register(user);
+                            MessageBox.Show("Sign Up Success!!!");
+                        }
+                    }
+                }  
+            }
+            catch (Exception)
+            {
+            }
+        }
     }
 }

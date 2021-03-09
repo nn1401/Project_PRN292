@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project_PRN {
+
+
     public partial class MainForm : Form {
         Form form;
         public MainForm(Form form) {
@@ -104,6 +106,13 @@ namespace Project_PRN {
         private void btnBill_Click(object sender, EventArgs e) {
             ClearButtton();
             btnBill.BackColor = Color.LightSalmon;
+        }
+
+
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
