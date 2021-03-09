@@ -13,10 +13,6 @@ namespace Project_PRN {
 
     public partial class MainForm : Form {
         Form form;
-        public MainForm(Form form) {
-            this.form = form;
-            InitializeComponent();
-        }
         public MainForm() {
             InitializeComponent();
         }
@@ -26,16 +22,35 @@ namespace Project_PRN {
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+            GetOptionByRole(labelRole.Text);
         }
-
+        public void GetOptionByRole(string role) {
+            switch (role)
+            {
+                case "Admin":
+                    //Ẩn Shopping và My order
+                    pictureShopping.Hide();
+                    pictureMyOrder.Hide();
+                    btnShopping.Hide();
+                    btnMyOrder.Hide();
+                    //
+                    break;
+                case "User":
+                    //Ẩn Home, Product, Account và Order
+                    pictureHome.Hide();
+                    pictureOrder.Hide();
+                    pictureAccount.Hide();
+                    pictureProduct.Hide();
+                    btnHome.Hide();
+                    btnProduct.Hide();
+                    btnAccount.Hide();
+                    btnOrder.Hide();
+                    //
+                    break;
+            }
+        }
         public void ClearButtton() {
             panelWork.Controls.Clear();
-
-            btnHome.BackColor = Color.Transparent;
-            btnBill.BackColor = Color.Transparent;
-            btnAccount.BackColor = Color.Transparent;
-            btnLogOut.BackColor = Color.Transparent;
-            btnProduct.BackColor = Color.Transparent;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e) {
@@ -105,7 +120,38 @@ namespace Project_PRN {
 
         private void btnBill_Click(object sender, EventArgs e) {
             ClearButtton();
-            btnBill.BackColor = Color.LightSalmon;
+            btnOrder.BackColor = Color.LightSalmon;
+
+            Admin_OrderForm admin_OrderForm = new Admin_OrderForm();
+            admin_OrderForm.TopLevel = false;
+            panelWork.Controls.Add(admin_OrderForm);
+            admin_OrderForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            admin_OrderForm.Dock = DockStyle.Fill;
+            admin_OrderForm.Show();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e) {
+            ClearButtton();
+            btnOrder.BackColor = Color.LightSalmon;
+
+            ProfileForm profileForm = new ProfileForm();
+            profileForm.TopLevel = false;
+            panelWork.Controls.Add(profileForm);
+            profileForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            profileForm.Dock = DockStyle.Fill;
+            profileForm.Show();
+        }
+
+        private void btnMyOrder_Click(object sender, EventArgs e) {
+            ClearButtton();
+            btnOrder.BackColor = Color.LightSalmon;
+
+            User_MyOrderForm user_MyOrderForm = new User_MyOrderForm();
+            user_MyOrderForm.TopLevel = false;
+            panelWork.Controls.Add(user_MyOrderForm);
+            user_MyOrderForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            user_MyOrderForm.Dock = DockStyle.Fill;
+            user_MyOrderForm.Show();
         }
 
 

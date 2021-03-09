@@ -74,6 +74,9 @@ namespace Project_PRN {
             catch (Exception)
             {
             }
+            MainForm mainForm = new MainForm();
+            this.Hide();
+            mainForm.Show();
         }
     }
 }

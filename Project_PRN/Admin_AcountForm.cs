@@ -33,6 +33,11 @@ namespace Project_PRN {
         }
 
         private void Admin_AcountForm_Load(object sender, EventArgs e) {
+            DesignForm();
+        }
+
+        public void DesignForm() {
+
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
@@ -43,6 +48,7 @@ namespace Project_PRN {
         }
 
         public void GetAllAccountToListView() {
+
 
             dataGridViewAccount.BorderStyle = BorderStyle.None;
             dataGridViewAccount.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
