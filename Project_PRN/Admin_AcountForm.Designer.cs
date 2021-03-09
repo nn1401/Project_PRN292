@@ -25,7 +25,7 @@ namespace Project_PRN {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -106,6 +106,7 @@ namespace Project_PRN {
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label1
             // 
@@ -116,7 +117,7 @@ namespace Project_PRN {
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 38);
+            this.label1.Size = new System.Drawing.Size(172, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "List account";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,6 +134,19 @@ namespace Project_PRN {
             this.ColumnFullname,
             this.ColumnPhone,
             this.ColumnRole});
+
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAccount.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewAccount.Location = new System.Drawing.Point(5, 34);
+            this.dataGridViewAccount.Margin = new System.Windows.Forms.Padding(2);
+
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,12 +158,54 @@ namespace Project_PRN {
             this.dataGridViewAccount.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewAccount.Location = new System.Drawing.Point(7, 42);
             this.dataGridViewAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.dataGridViewAccount.Name = "dataGridViewAccount";
             this.dataGridViewAccount.ReadOnly = true;
             this.dataGridViewAccount.RowHeadersWidth = 51;
             this.dataGridViewAccount.RowTemplate.Height = 24;
             this.dataGridViewAccount.Size = new System.Drawing.Size(835, 334);
             this.dataGridViewAccount.TabIndex = 1;
+            this.dataGridViewAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAccount_CellContentClick);
+            // 
+            // ColumnNumber
+            // 
+            this.ColumnNumber.HeaderText = "St";
+            this.ColumnNumber.MinimumWidth = 6;
+            this.ColumnNumber.Name = "ColumnNumber";
+            this.ColumnNumber.ReadOnly = true;
+            this.ColumnNumber.Width = 30;
+            // 
+            // ColumnUsername
+            // 
+            this.ColumnUsername.HeaderText = "Username";
+            this.ColumnUsername.MinimumWidth = 6;
+            this.ColumnUsername.Name = "ColumnUsername";
+            this.ColumnUsername.ReadOnly = true;
+            this.ColumnUsername.Width = 150;
+            // 
+            // ColumnFullname
+            // 
+            this.ColumnFullname.HeaderText = "Fullname";
+            this.ColumnFullname.MinimumWidth = 6;
+            this.ColumnFullname.Name = "ColumnFullname";
+            this.ColumnFullname.ReadOnly = true;
+            this.ColumnFullname.Width = 190;
+            // 
+            // ColumnPhone
+            // 
+            this.ColumnPhone.HeaderText = "Phone number";
+            this.ColumnPhone.MinimumWidth = 6;
+            this.ColumnPhone.Name = "ColumnPhone";
+            this.ColumnPhone.ReadOnly = true;
+            this.ColumnPhone.Width = 150;
+            // 
+            // ColumnRole
+            // 
+            this.ColumnRole.HeaderText = "Role";
+            this.ColumnRole.MinimumWidth = 6;
+            this.ColumnRole.Name = "ColumnRole";
+            this.ColumnRole.ReadOnly = true;
+            this.ColumnRole.Width = 53;
             // 
             // ColumnNumber
             // 
@@ -249,7 +305,7 @@ namespace Project_PRN {
             this.radioUser.Location = new System.Drawing.Point(220, 75);
             this.radioUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioUser.Name = "radioUser";
-            this.radioUser.Size = new System.Drawing.Size(77, 28);
+            this.radioUser.Size = new System.Drawing.Size(64, 23);
             this.radioUser.TabIndex = 1;
             this.radioUser.TabStop = true;
             this.radioUser.Text = "User";
@@ -263,7 +319,7 @@ namespace Project_PRN {
             this.radioAdmin.Location = new System.Drawing.Point(24, 71);
             this.radioAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioAdmin.Name = "radioAdmin";
-            this.radioAdmin.Size = new System.Drawing.Size(96, 28);
+            this.radioAdmin.Size = new System.Drawing.Size(79, 23);
             this.radioAdmin.TabIndex = 0;
             this.radioAdmin.TabStop = true;
             this.radioAdmin.Text = "Admin";
@@ -355,6 +411,7 @@ namespace Project_PRN {
             this.labelUsername.TabIndex = 1;
             this.labelUsername.Text = "admin";
             this.labelUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
             // 
             // label2
             // 

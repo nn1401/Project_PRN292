@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project_PRN {
+
+
     public partial class MainForm : Form {
         Form form;
         public MainForm() {
@@ -150,6 +152,13 @@ namespace Project_PRN {
             user_MyOrderForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             user_MyOrderForm.Dock = DockStyle.Fill;
             user_MyOrderForm.Show();
+        }
+
+
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

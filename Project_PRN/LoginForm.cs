@@ -35,7 +35,45 @@ namespace Project_PRN {
             e.Handled = !(char.IsLetter(e.KeyChar) || char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
 
+       
+
+
         private void btnLogin_Click(object sender, EventArgs e) {
+            Users user = new Users();
+            try
+            {
+                user = UserDAO.getUserByIdAndPassword(txtUsername.Text, txtPassword.Text);
+               
+                if(txtUsername.Text == "")
+                {
+                    MessageBox.Show("please enter your uesrname!!!");
+                }
+                else if(txtUsername.Text != "" && txtPassword.Text == "")
+                {
+                    MessageBox.Show("please enter your pasword!!!");
+                }
+                else
+                {
+                    if (user.Role == null)
+                    {
+                        MessageBox.Show("username or password incorrect!!!");
+                    }
+                    else if (user.Role.RoleId == 1)
+                    {
+                        MainForm mainForm = new MainForm(this);
+                        this.Hide();
+                        mainForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("login with user role");
+                    }
+                }
+                
+            }                           
+            catch (Exception)
+            {
+            }
             MainForm mainForm = new MainForm();
             this.Hide();
             mainForm.Show();
